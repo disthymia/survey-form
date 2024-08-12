@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Monarche Audio Survey Form</h1>
+        <p id="description" class="description text-center">
+          Thank you for taking the time to help us improve our lineup
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Which option best describes you?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select</option>
+            <option value="bedroom">Bedroom Musician</option>
+            <option value="garage">Garage Musician</option>
+            <option value="studio">Studio Musician</option>
+            <option value="gigging">Gigging Musician</option>
+            <option value="touring">Touring Musician</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend Monarche Audio pedals to a friend?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+            <p>Pickup type?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="single-coil"
+                type="radio"
+                class="input-radio"
+                checked
+              />Single Coil</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="humbucker"
+                type="radio"
+                class="input-radio"
+              />Humbucker</label
+            >
+  
+            <label
+              ><input
+                name="user-recommend"
+                value="P90"
+                type="radio"
+                class="input-radio"
+              />P90</label
+            >
+
+            <label
+              ><input
+                name="user-recommend"
+                value="Other"
+                type="radio"
+                class="input-radio"
+              />Other</label
+            >
+          </div>
+
+        <div class="form-group">
+          <p>What is your favorite Monarche Audio pedal?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="pajeon">Pajeon Hard Clipping Overdrive</option>
+            <option value="arche">Arche Boost-Overdrive</option>
+            <option value="mesis">Mesis Overdrive-Distortion</option>
+            <option value="telos">Telos Distortion-Fuzz</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            Which pedal types would you like to see combined?
+            <span class="clue">(Check two to three)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="soft-clipping-transparent-overdrive"
+              type="checkbox"
+              class="input-checkbox"
+            />Soft Clipping Transparent Overdrive</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="soft-clipping-focused-overdrive"
+              type="checkbox"
+              class="input-checkbox"
+            />Soft Clipping Focused Overdrive</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hard-clipping-transparent-overdrive"
+              type="checkbox"
+              class="input-checkbox"
+            />Hard Clipping Transparent Overdrive</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="hard-clipping-focused-overdrive"
+              type="checkbox"
+              class="input-checkbox"
+            />Hard Clipping Focused Overdrive</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="amp-in-a-box-aiab"
+              type="checkbox"
+              class="input-checkbox"
+            />Amp-In-A-Box (AIAB, mosfet, jfet)</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="treble-boost"
+              type="checkbox"
+              class="input-checkbox"
+            />Treble Boost</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mid-boost"
+              type="checkbox"
+              class="input-checkbox"
+            />Mid Boost</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="full-boost"
+              type="checkbox"
+              class="input-checkbox"
+            />Full-frequency/Preamp Boost</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="fuzz-face-tone-bender-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />Fuzz Face/Tone Bender Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="big-muff-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />Big Muff Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="opamp-big-muff-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />OpAmp Big Muff Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="silicon-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />Silicon Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="octave-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />Octave Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="modern-fuzz"
+              type="checkbox"
+              class="input-checkbox"
+            />Modern Fuzz</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="transparent-distortion"
+              type="checkbox"
+              class="input-checkbox"
+            />Transparent Distortion</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="focused-distortion"
+              type="checkbox"
+              class="input-checkbox"
+            />Focused Distortion</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="high-gain-metal-distortion"
+              type="checkbox"
+              class="input-checkbox"
+            />High-gain/Metal Distortion</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="optical-compressor"
+              type="checkbox"
+              class="input-checkbox"
+            />Optical Compressor</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="fet-compressor"
+              type="checkbox"
+              class="input-checkbox"
+            />FET Compressor</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="tape-analog-delay"
+              type="checkbox"
+              class="input-checkbox"
+            />Tape/Analog Delay</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="spring-reverb"
+              type="checkbox"
+              class="input-checkbox"
+            />Spring Reverb</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="plate-reverb"
+              type="checkbox"
+              class="input-checkbox"
+            />Plate Reverb</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="chorus"
+              type="checkbox"
+              class="input-checkbox"
+            />Chorus</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="vibrato"
+              type="checkbox"
+              class="input-checkbox"
+            />Vibrato</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="flanger"
+              type="checkbox"
+              class="input-checkbox"
+            />Flanger</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="univibe"
+              type="checkbox"
+              class="input-checkbox"
+            />Univibe</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="phaser"
+              type="checkbox"
+              class="input-checkbox"
+            />Phaser</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="tremolo"
+              type="checkbox"
+              class="input-checkbox"
+            />Tremolo</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="eq-pitch-filter"
+              type="checkbox"
+              class="input-checkbox"
+            />EQ/Pitch/Filter</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
